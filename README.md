@@ -1,5 +1,7 @@
 # TayaTracker
 
+TayaTracker is a music tracker inspired by trackers like the dirtywave m8 and the nintendo gameboy music tracker LSDJ.
+
 ## Interface
 
 On desktop just keyboard controls, on mobile about half the screen are buttons for keyboard controls.
