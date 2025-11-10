@@ -14,17 +14,19 @@ The interface is minimalistic, just consisting of 8 buttons.
 - Shift key
 - Play key
 
-Arrow keys move the cursor
-Shift + Arrow key switch between views
-Edit (on empty cell) insert a new value or paste
-Edit + Left decrease value
-Edit + Right increase value
-Edit + Up increase by more
-Edit + Down decrease by more
-Edit + Option Deletes/cuts the selected value
+Usage:
 
-Edit key also functions as 'YES'
-Option key functions as 'NO'
+- Arrow keys move the cursor
+- Shift + Arrow key switch between views
+- Edit (on empty cell) insert a new value or paste
+- Edit + Left decrease value
+- Edit + Right increase value
+- Edit + Up increase by more
+- Edit + Down decrease by more
+- Edit + Option Deletes/cuts the selected value
+
+- Edit key also functions as 'YES'
+- Option key functions as 'NO'
 
 ## Views
 
