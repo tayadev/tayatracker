@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TayaTracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.ts" defer></script>
+  </head>
+  <body>
+    <canvas id="terminal" width="1152" height="864"></canvas>
+    <div id="buttons">
+      <div class="button-column left-side">
+        <div class="dpad-row">
+          <button data-button="up" class="virtual-btn arrow-btn">↑</button>
+        </div>
+        <div class="dpad-row">
+          <button data-button="left" class="virtual-btn arrow-btn">←</button>
+          <button data-button="down" class="virtual-btn arrow-btn">↓</button>
+          <button data-button="right" class="virtual-btn arrow-btn">→</button>
+        </div>
+      </div>
+      <div class="button-column right-side">
+        <div class="button-grid-row">
+          <button data-button="edit" class="virtual-btn action-btn">
+            EDIT
+          </button>
+          <button data-button="option" class="virtual-btn mod-btn">
+            OPTION
+          </button>
+        </div>
+        <div class="button-grid-row">
+          <button data-button="shift" class="virtual-btn mod-btn">SHIFT</button>
+          <button data-button="play" class="virtual-btn action-btn">
+            PLAY
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Monocraft";
+  src: url("./Monocraft.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Monocraft", monospace;
+  background: black;
+  color: white;
+
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#terminal {
+  background-color: black;
+  aspect-ratio: 4/3;
+  max-width: 90vw;
+  flex-shrink: 1;
+}
+
+#buttons {
+  display: none;
+}
+
+@media (max-width: 768px), (pointer: coarse) {
+  #buttons {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  #terminal {
+    max-height: 50vh;
+  }
+}
+
+.button-column,
+.dpad-row,
+.button-grid-row {
+  display: flex;
+  gap: 8px;
+}
+
+.button-column {
+  flex-direction: column;
+}
+
+.dpad-row:first-child {
+  padding-left: 78px;
+}
+
+.virtual-btn {
+  font-family: "Monocraft", monospace;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #666;
+  background: #222;
+  color: white;
+  font-size: 12px;
+}
+
+.virtual-btn:active,
+.virtual-btn.active {
+  background: #444;
+  border-color: #aaa;
+}
+
+.arrow-btn {
+  font-size: 24px;
+}
