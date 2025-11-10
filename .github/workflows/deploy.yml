@@ -25,7 +25,7 @@ jobs:
           bun-version: latest
 
       - name: Build with Bun
-        run: bun bundle --outdir dist ./index.html
+        run: bun build --outdir dist ./index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
