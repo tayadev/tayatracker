@@ -1,9 +1,10 @@
 import { data, newFile, saveFile } from "../app";
 import { Button, wasPressed } from "../input";
+import { midiInit } from "../midi";
 import { Color, drawString } from "../renderer";
 
 export default () => {
-  const options = ["NEW", "SAVE", "OPTION 3"];
+  const options = ["NEW", "SAVE", "INIT MIDI"];
 
   // input handling
   if (wasPressed(Button.Down)) {
@@ -20,6 +21,9 @@ export default () => {
         break;
       case 1:
         saveFile();
+        break;
+      case 2:
+        midiInit();
         break;
     }
   }

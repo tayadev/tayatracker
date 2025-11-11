@@ -3,17 +3,6 @@ import { Button, isPressed, wasPressed } from "../input";
 import { Color, drawString } from "../renderer";
 import { table, to2DigHex, toNote } from "../util";
 
-/*
-
-PATTERN XX
-
-   N   V  I  FX1   FX2   FX3
-00 --- -- -- ----- ----- -----
-01 --- -- -- ----- ----- -----
-02 --- -- -- ----- ----- -----
-
-*/
-
 let patternScrollOffset = 0;
 
 export default () => {
@@ -46,12 +35,18 @@ export default () => {
 
   const { scrollOffset, tabledata } = table({
     columns: [
-      { title: "N", width: 3, max: 128, render: (n) => toNote(n) },
+      {
+        title: "N",
+        width: 3,
+        max: 128,
+        editIncrements: { small: 1, big: 12 },
+        render: (n) => toNote(n),
+      },
       { title: "V", width: 2, max: 256, render: (n) => to2DigHex(n) },
       { title: "I", width: 2, max: 256, render: (n) => to2DigHex(n) },
     ],
     tabledata: pattern,
-    rowCount: 256,
+    rowCount: 16,
     scrollOffset: patternScrollOffset,
   });
   patternScrollOffset = scrollOffset;
